@@ -1,1 +1,1 @@
-Cố gằng không rót môn 
+Cố gằng không rớt môn 
