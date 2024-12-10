@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Version2.Models.Sach>
+
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<!-- Header Section -->
+<div class="flex justify-between items-center bg-gradient-to-r from-green-500 to-blue-500 p-6 rounded-lg shadow-md mb-6 text-white">
+    <h3 class="text-3xl font-bold">Danh Sách Sách</h3>
+    <form method="get" action="@Url.Action("Index", "Saches")" class="flex items-center space-x-2">
+        <input type="text"
+               name="searchTerm"
+               placeholder="Tìm kiếm..."
+               class="border border-white rounded-md px-4 py-2 bg-transparent text-white placeholder-gray-200 focus:outline-none focus:ring focus:ring-blue-300"
+               value="@ViewBag.SearchTerm" />
+        <button type="submit"
+                class="px-4 py-2 bg-white text-green-600 font-medium rounded-md shadow hover:bg-gray-200 transition">
+            Tìm kiếm
+        </button>
+    </form>
+</div>
+
+<!-- Statistics Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+    <!-- Tổng số phiếu đặt hàng -->
+    <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center hover:shadow-xl transition">
+        <h5 class="text-lg font-semibold">Tổng số phiếu đặt hàng</h5>
+        @* <p class="text-4xl font-bold">@Model.Count()</p> *@
+    </div>
+
+
+</div>
+<div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="flex justify-between items-center mb-4">
+        <h4 class="text-xl font-semibold text-gray-700">Danh sách Khách Hàng</h4>
+        <a href="@Url.Action("Create", "Saches")"
+           class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
+            Thêm Khách Hàng
+        </a>
+    </div>
+    <table class="table-auto w-full border-collapse border border-gray-200">
+        <thead class="bg-gradient-to-r from-green-500 to-blue-500 text-white">
+            <tr>
+                <th class="max-w-72 max-h-48">Ảnh sách</th>
+                <th class="px-4 py-3 text-left">ID</th>
+                <th class="px-4 py-3 text-left">Tên sách</th>
+                <th class="px-4 py-3 text-left">Năm XB</th>
+                <th class="px-4 py-3 text-left">Số trang</th>
+                <th class="px-4 py-3 text-left">Giá</th>
+                <th class="px-4 py-3 text-left">SL tồn</th>
+                <th class="px-4 py-3 text-left">Mô tả</th>
+                <th class="px-4 py-3 text-left">ISBN</th>
+                <th class="px-4 py-3 text-left">Danh mục</th>
+                <th class="px-4 py-3 text-left">NXB</th>
+                <th class="px-4 py-3 text-center">Hành động</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+            @foreach (var item in ViewBag.sach)
+            {
+                    <tr class="hover:bg-gray-100 transition duration-150">
+                        <td class="px-4 py-3">
+                                <img src="@Url.Content(@item.HinhAnh)" alt="Ảnh sách" class="max-w-72 max-h-48" />
+                        </td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.Idsach</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.TenSach</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.NamXuatBan</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.SoTrang</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.Gia.ToString("C0")</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.SoLuongTon</td>
+                        <td class="px-4 py-3 text-sm text-gray-700 truncate max-w-xs">@item.MoTa</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.Isbn</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.IddanhMucNavigation.TenDanhMuc</td>
+                        <td class="px-4 py-3 text-sm text-gray-700">@item.IdnhaXuatBanNavigation.TenNhaXuatBan</td>
+                        <td class="px-4 py-3 flex justify-center space-x-2">
+                            <a asp-controller="Saches" asp-action="Edit" asp-route-id="@item.Idsach"
+                               class="bg-yellow-500 text-white text-sm font-medium px-3 py-1 rounded hover:bg-yellow-400">
+                                Chỉnh sửa
+                            </a>
+                            <a asp-controller="Saches" asp-action="Delete" asp-route-id="@item.Idsach"
+                               onclick="return confirmDelete();"
+                               class="bg-red-600 text-white text-sm font-medium px-3 py-1 rounded hover:bg-red-500">
+                                Xóa
+                            </a>
+                        </td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+<!-- JavaScript để xác nhận xóa -->
+<script>
+    function confirmDelete() {
+        return confirm("Bạn có chắc chắn muốn xóa sách này? Hành động này không thể hoàn tác.");
+    }
+</script>

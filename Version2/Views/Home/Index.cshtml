@@ -1,0 +1,55 @@
+﻿    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        @foreach (var item in ViewBag.Sach)
+        {
+            <div class="book-item max-w-xs mx-auto rounded-lg shadow-lg overflow-hidden">
+                <div class="book-image-container">
+                    <img src="@Url.Content(item.HinhAnh)" alt="Ảnh của @item.TenSach" class="book-image w-full h-64 object-cover">
+                </div>
+                <div class="p-4">
+                    <h5 class="text-lg font-semibold text-gray-800 truncate">@item.TenSach</h5>
+                    <p class="text-gray-600 mt-1 text-sm">Tác giả: @item.IdnhaXuatBanNavigation.TenNhaXuatBan</p>
+                    <p class="text-gray-800 mt-1 font-semibold text-sm">Giá: @item.Gia.ToString("C0")</p>
+                    <div class="mt-4 flex space-x-2">
+                        <button class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition duration-200">
+                            Mua Ngay
+                        </button>
+                    <button class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition duration-200 btn-add-to-cart" data-id="@item.Idsach">
+                        Thêm Giỏ
+                    </button>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Phân trang -->
+    <div class="mt-8 flex justify-center">
+        <nav>
+            <ul class="inline-flex items-center space-x-2">
+                @if (Model.HasPreviousPage)
+                {
+                    <li>
+                        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })"
+                           class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition duration-200">‹</a>
+                    </li>
+                }
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+                    <li>
+                        <a href="@Url.Action("Index", new { page = i })"
+                           class="px-4 py-2 @(Model.PageNumber == i ? "bg-blue-600 text-white" : "bg-gray-200") rounded-lg hover:bg-gray-300 transition duration-200">
+                            @i
+                        </a>
+                    </li>
+                }
+                @if (Model.HasNextPage)
+                {
+                    <li>
+                        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1 })"
+                           class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition duration-200">›</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>

@@ -1,0 +1,48 @@
+﻿@model Version2.Models.Taikhoan
+
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <!-- Tiêu đề -->
+    <h1 class="text-2xl font-bold text-red-600 mb-6">Xóa Tài Khoản</h1>
+
+    <!-- Cảnh báo -->
+    <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded mb-6" role="alert">
+        <p class="font-bold">Cảnh báo!</p>
+        <p>Bạn có chắc chắn muốn xóa tài khoản này không? Hành động này không thể hoàn tác.</p>
+    </div>
+
+    <!-- Thông tin tài khoản -->
+    <div class="space-y-4 mb-6">
+        <div class="flex justify-between items-center">
+            <span class="font-semibold text-gray-700">Tên Đăng Nhập:</span>
+            <span class="text-gray-900">@Html.DisplayFor(model => model.TenDangNhap)</span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="font-semibold text-gray-700">Mật Khẩu:</span>
+            <span class="text-gray-900">@Html.DisplayFor(model => model.MatKhau)</span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="font-semibold text-gray-700">Ngày Tạo:</span>
+            <span class="text-gray-900">@Html.DisplayFor(model => model.NgayTaoTaiKhoan)</span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="font-semibold text-gray-700">Khách Hàng:</span>
+            <span class="text-gray-900">@Html.DisplayFor(model => model.IdkhachHangNavigation.TenKhachHang)</span>
+        </div>
+    </div>
+
+    <!-- Form xác nhận xóa -->
+    <form asp-action="Delete" method="post" class="flex justify-end space-x-4">
+        <input type="hidden" asp-for="IdtaiKhoan" />
+        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded shadow hover:bg-red-500 transition">
+            Xóa
+        </button>
+        <a href="@Url.Action("Index", "Taikhoans")"
+           class="bg-gray-300 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-400 transition">
+            Hủy
+        </a>
+    </form>
+</div>

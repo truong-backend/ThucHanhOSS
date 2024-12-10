@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Tác Giả</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gradient-to-r from-blue-50 via-white to-blue-100">
+
+    <!-- Sidebar -->
+    <div class="sidebar fixed top-0 left-0 h-full w-64 bg-gray-900 text-white shadow-xl p-4">
+        <!-- Fixed header at the top of the sidebar -->
+        <div class="sticky top-0 text-center mb-6 bg-gray-900 p-4">
+            <img src="./download.jpg" alt="Logo" class="w-16 h-16 object-cover rounded-full border-4 border-blue-600 mx-auto mb-3">
+            <h3 class="text-lg font-semibold">Quản lý Hệ Thống</h3>
+        </div>
+        <ul class="space-y-4">
+            <!-- Menu Items -->
+            <li>
+                <a href="@Url.Action("Index", "DanhMucs")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-book"></i><span>Quản lý Danh Mục</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Saches")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-book"></i><span>Quản lý Sách</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Tacgiums")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-user-edit"></i><span>Quản lý Tác Giả</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Nhaxuatbans")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-building"></i><span>Quản lý Nhà Xuất Bản</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Taikhoans")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-user-shield"></i><span>Quản lý Tài Khoản</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Khachhangs")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-users"></i><span>Quản lý Khách Hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Phieudathangs")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-cart-arrow-down"></i><span>Quản lý Phiếu Đặt Hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Hoadons")" class="flex items-center space-x-2 hover:bg-blue-700 transition-all duration-300 p-2 rounded-lg">
+                    <i class="fas fa-receipt"></i><span>Quản lý Hóa Đơn</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="ml-64 p-8 bg-white shadow-md rounded-lg">
+        <div class="flex justify-between items-center mb-6">
+            <div class="text-lg font-bold text-gray-700">Dashboard</div>
+            <div>
+                <a href="@Url.Action("Logout", "Home")">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Đăng Xuất
+                    </button>
+                </a>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+
+    <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        // Set active menu based on local storage
+        function setActiveMenu() {
+            const activeMenu = localStorage.getItem('activeMenu');
+            if (activeMenu) {
+                document.querySelectorAll('.menu-item').forEach(item => item.classList.remove('bg-blue-700', 'text-white'));
+                const active = document.getElementById(activeMenu);
+                if (active) {
+                    active.classList.add('bg-blue-700', 'text-white');
+                }
+            }
+        }
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                localStorage.setItem('activeMenu', item.id);
+                setActiveMenu();
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', setActiveMenu);
+    </script>
+</body>
+
+</html>

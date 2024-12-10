@@ -1,0 +1,27 @@
+﻿@model Version2.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "Đăng nhập";
+}
+
+<h2 class="text-2xl font-semibold text-gray-800 mb-4">@ViewData["Title"]</h2>
+
+<!-- Customer Login Form -->
+<div id="customerLoginForm">
+    <form asp-action="Login" method="post" class="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+        <div class="mb-4">
+            <label for="TenDangNhap" class="block text-gray-700 font-medium mb-2">Tên đăng nhập</label>
+            <input type="text" id="TenDangNhap" name="TenDangNhap" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500" required />
+        </div>
+        <div class="mb-4">
+            <label for="MatKhau" class="block text-gray-700 font-medium mb-2">Mật khẩu</label>
+            <input type="password" id="MatKhau" name="MatKhau" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500" required />
+        </div>
+        <button type="submit" class="w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition duration-200">Đăng nhập</button>
+
+        <!-- Register Link -->
+        <div class="text-center mt-4">
+            <a href="@Url.Action("Register", "Home")" class="text-indigo-600 hover:underline">Chưa có tài khoản? Đăng ký ngay</a>
+        </div>
+    </form>
+</div>

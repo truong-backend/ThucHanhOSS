@@ -1,0 +1,122 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+@model IEnumerable<Version2.Models.Tacgium>
+
+<!-- Header Section -->
+<div class="flex justify-between items-center bg-gradient-to-r from-green-500 to-blue-500 p-6 rounded-lg shadow-md mb-6 text-white">
+    <h3 class="text-3xl font-bold">Danh Sách Tác Giả</h3>
+    <form method="get" action="@Url.Action("Index", "Tacgiums")" class="flex items-center space-x-2">
+        <input type="text"
+               name="searchTerm"
+               placeholder="Tìm kiếm..."
+               class="border border-white rounded-md px-4 py-2 bg-transparent text-white placeholder-gray-200 focus:outline-none focus:ring focus:ring-blue-300"
+               value="@ViewBag.SearchTerm" />
+        <button type="submit"
+                class="px-4 py-2 bg-white text-green-600 font-medium rounded-md shadow hover:bg-gray-200 transition">
+            Tìm kiếm
+        </button>
+    </form>
+</div>
+
+<!-- Statistics Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+    <!-- Tổng số tác giả -->
+    <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center hover:shadow-xl transition">
+        <h5 class="text-lg font-semibold">Tổng số tác giả</h5>
+        <p class="text-4xl font-bold">@Model.Count()</p>
+    </div>
+
+
+</div>
+
+
+<!-- Table Section -->
+<div class="bg-white shadow-lg rounded-lg p-6">
+    <div class="flex justify-between items-center mb-4">
+        <h4 class="text-xl font-semibold text-gray-700">Danh sách Tác Giả</h4>
+        <a href="@Url.Action("Create", "Tacgiums")"
+           class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
+            Thêm Tác Giả
+        </a>
+    </div>
+
+    <table class="table-auto w-full border-collapse border border-gray-200">
+        <thead>
+            <tr class="bg-gradient-to-r from-green-600 to-blue-500 text-white">
+                <th class="px-4 py-2 border">ID</th>
+                <th class="px-4 py-2 border">Họ và Tên</th>
+                <th class="px-4 py-2 border">Ngày Sinh</th>
+                <th class="px-4 py-2 border">Quốc Tịch</th>
+                <th class="px-4 py-2 border">Chức Năng</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+            @if (!string.IsNullOrEmpty(ViewBag.Message))
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-red-500 py-4">
+                        @ViewBag.Message
+                    </td>
+                </tr>
+            }
+            @foreach (var tacGia in Model)
+            {
+                <tr class="text-center hover:bg-gray-100 transition">
+                    <td class="px-4 py-2 border">@tacGia.IdtacGia</td>
+                    <td class="px-4 py-2 border">@tacGia.TenTacGia</td>
+                    <td class="px-4 py-2 border">@tacGia.NgaySinh?.ToString("yyyy-MM-dd")</td>
+                    <td class="px-4 py-2 border">@tacGia.QuocTich</td>
+                    <td class="px-4 py-2 border">
+                        <div class="flex justify-center space-x-4">
+                            <!-- Cập nhật -->
+                            <a href="@Url.Action("Edit", "Tacgiums", new { id = tacGia.IdtacGia })"
+                               class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
+                                Cập nhật
+                            </a>
+
+                            <!-- Xóa -->
+                            <a href="@Url.Action("Delete", "Tacgiums", new { id = tacGia.IdtacGia })"
+                               class="px-3 py-1 bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-md hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-600 transition">
+                                Xóa
+                            </a>
+                        </div>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Pagination Section -->
+<nav class="mt-6 flex justify-center">
+    <ul class="flex items-center space-x-2">
+        <!-- Nút Trước -->
+        <li>
+            <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1, searchTerm = ViewBag.SearchTerm })"
+               class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition @(ViewBag.CurrentPage == 1 ? "pointer-events-none opacity-50" : "")">
+                Trước
+            </a>
+        </li>
+
+        <!-- Số trang -->
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li>
+                <a href="@Url.Action("Index", new { page = i, searchTerm = ViewBag.SearchTerm })"
+                   class="px-4 py-2 rounded-md transition @(ViewBag.CurrentPage == i ? "bg-blue-500 text-white" : "bg-gray-200 hover:bg-gray-300")">
+                    @i
+                </a>
+            </li>
+        }
+
+        <!-- Nút Tiếp -->
+        <li>
+            <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1, searchTerm = ViewBag.SearchTerm })"
+               class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition @(ViewBag.CurrentPage == ViewBag.TotalPages ? "pointer-events-none opacity-50" : "")">
+                Tiếp
+            </a>
+        </li>
+    </ul>
+</nav>

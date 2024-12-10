@@ -1,0 +1,54 @@
+﻿@model Version2.Models.Tacgium
+
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<h2 class="text-3xl font-bold text-center text-yellow-600 mb-8">Cập nhật Tác Giả</h2>
+
+<div class="max-w-4xl mx-auto bg-gradient-to-r from-green-400 to-blue-500 p-8 rounded-lg shadow-lg">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <form asp-action="Edit" method="post" class="space-y-6">
+            <!-- ID ẩn -->
+            <input asp-for="IdtacGia" type="hidden" />
+
+            <!-- Họ và tên -->
+            <div>
+                <label for="TenTacGia" class="block text-sm font-medium text-gray-700">Họ và Tên</label>
+                <input asp-for="TenTacGia"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500" />
+                <span asp-validation-for="TenTacGia" class="text-sm text-red-500"></span>
+            </div>
+
+            <!-- Ngày sinh -->
+            <div>
+                <label for="NgaySinh" class="block text-sm font-medium text-gray-700">Ngày Sinh</label>
+                <input asp-for="NgaySinh" type="date"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500" />
+                <span asp-validation-for="NgaySinh" class="text-sm text-red-500"></span>
+            </div>
+
+            <!-- Quốc tịch -->
+            <div>
+                <label for="QuocTich" class="block text-sm font-medium text-gray-700">Quốc Tịch</label>
+                <input asp-for="QuocTich"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500" />
+                <span asp-validation-for="QuocTich" class="text-sm text-red-500"></span>
+            </div>
+
+            <!-- Nút hành động -->
+            <div class="flex items-center justify-end space-x-4">
+                <!-- Nút Cập nhật -->
+                <button type="submit"
+                        class="bg-yellow-600 text-white px-6 py-2 rounded-md shadow hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-600">
+                    Cập nhật
+                </button>
+                <!-- Nút Hủy -->
+                <a asp-action="Index"
+                   class="bg-gray-600 text-white px-6 py-2 rounded-md shadow hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600">
+                    Hủy
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

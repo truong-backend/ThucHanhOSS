@@ -1,0 +1,135 @@
+﻿@model Version2.Models.SachModel
+
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+@{
+    HeThongBanSachContext db = new HeThongBanSachContext();
+
+    SelectList DSDM = new SelectList(db.Danhmucs.ToList(), "IddanhMuc", "TenDanhMuc");
+    SelectList DSNXB = new SelectList(db.Nhaxuatbans.ToList(), "IdnhaXuatBan", "TenNhaXuatBan");
+}
+
+<div class="container mx-auto py-8">
+    <div class="h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+        <h3 class="text-3xl font-extrabold text-white">Thêm Thông Tin Sách</h3>
+    </div>
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data" class="space-y-6 bg-white p-8 rounded-lg shadow-md mt-8">
+        <!-- Hình ảnh -->
+        <div>
+            <label asp-for="HinhAnh" class="block text-sm font-medium text-gray-700">Hình Ảnh</label>
+            <input asp-for="HinhAnh" type="file" accept="image/*"
+                   class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+            <img id="preview" src="#" alt="Preview Image" class="hidden w-20 h-28 object-cover rounded-lg shadow-md mt-2" />
+        </div>
+
+        <!-- Thông tin hàng hóa -->
+        <h4 class="text-xl font-semibold text-gray-800">Thông Tin Sách</h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label asp-for="TenSach" class="block text-sm font-medium text-gray-700">Tên Sách</label>
+                <input asp-for="TenSach"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+                <span asp-validation-for="TenSach" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="NamXuatBan" class="block text-sm font-medium text-gray-700">Năm Xuất Bản</label>
+                <input asp-for="NamXuatBan" type="number"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+                <span asp-validation-for="NamXuatBan" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="SoTrang" class="block text-sm font-medium text-gray-700">Số Trang</label>
+                <input asp-for="SoTrang" type="number"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+                <span asp-validation-for="SoTrang" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Gia" class="block text-sm font-medium text-gray-700">Giá</label>
+                <input asp-for="Gia" type="number" step="0.01"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+                <span asp-validation-for="Gia" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="SoLuongTon" class="block text-sm font-medium text-gray-700">Số Lượng Tồn</label>
+                <input asp-for="SoLuongTon" type="number"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+                <span asp-validation-for="SoLuongTon" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="MoTa" class="block text-sm font-medium text-gray-700">Mô Tả</label>
+                <textarea asp-for="MoTa" rows="3"
+                          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300"></textarea>
+                <span asp-validation-for="MoTa" class="text-red-500 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Isbn" class="block text-sm font-medium text-gray-700">ISBN</label>
+                <input asp-for="Isbn"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+                <span asp-validation-for="Isbn" class="text-red-500 text-sm"></span>
+            </div>
+        </div>
+
+        <!-- Nhà xuất bản và danh mục -->
+        <div>
+            <label asp-for="IdnhaXuatBan" class="block text-sm font-medium text-gray-700">Nhà Xuất Bản</label>
+            <select asp-items="@DSNXB" asp-for="IdnhaXuatBan"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300"></select>
+        </div>
+
+        <div>
+            <label asp-for="IddanhMuc" class="block text-sm font-medium text-gray-700">Danh Mục</label>
+            <select asp-items="@DSDM" asp-for="IddanhMuc"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300"></select>
+        </div>
+
+        <!-- Nút hành động ở góc phải -->
+        <div class="flex justify-end space-x-4 mt-6">
+            <button type="submit"
+                    class="bg-blue-600 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-500 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
+                Thêm
+            </button>
+
+            <button onclick="window.location.href='@Url.Action("Index")'"
+                    class="bg-gray-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 transition duration-300">
+                Quay lại
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+    let isFormSubmitted = false;
+
+    document.querySelector("form").onsubmit = () => {
+        isFormSubmitted = true;
+    };
+
+    window.onbeforeunload = (event) => {
+        if (!isFormSubmitted) {
+            event.preventDefault();
+            event.returnValue = "Bạn có chắc chắn muốn rời khỏi trang khi chưa hoàn thành?";
+            return event.returnValue;
+        }
+    };
+
+    const fileInput = document.querySelector("input[type='file']");
+    const preview = document.getElementById("preview");
+
+    fileInput.onchange = evt => {
+        const [file] = fileInput.files;
+        if (file) {
+            preview.src = URL.createObjectURL(file);
+            preview.classList.remove("hidden");
+        }
+    };
+</script>

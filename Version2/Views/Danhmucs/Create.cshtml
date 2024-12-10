@@ -1,0 +1,39 @@
+﻿@model Version2.Models.Danhmuc
+
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Thêm Tác Giả</h2>
+
+<div class="max-w-4xl mx-auto bg-gradient-to-r from-green-400 to-blue-500 p-8 rounded-lg shadow-lg">
+    <form asp-action="Create" method="post" class="space-y-6 bg-white p-6 rounded-lg shadow-lg">
+        <!-- Tên Tác Giả -->
+        <div>
+            <label for="TenDanhMuc" class="block text-sm font-medium text-gray-700">Tên Danh Mục</label>
+            <input asp-for="TenDanhMuc" placeholder="Nhập tên tác giả"
+                   class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+            <span asp-validation-for="TenDanhMuc" class="text-sm text-red-500"></span>
+        </div>
+
+        <!-- Ngày Sinh -->
+        <div>
+            <label for="MoTa" class="block text-sm font-medium text-gray-700">Mô Tả</label>
+            <input asp-for="MoTa"
+                   class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+            <span asp-validation-for="MoTa" class="text-sm text-red-500"></span>
+        </div>
+
+
+        <!-- Buttons -->
+        <div class="flex justify-end space-x-4">
+            <button type="submit"
+                    class="bg-blue-500 text-white px-6 py-2 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                Thêm Tác Giả
+            </button>
+            <a asp-action="Index"
+               class="bg-gray-600 text-white px-6 py-2 rounded-md shadow hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                Quay lại
+            </a>
+        </div>
+    </form>
+</div>
