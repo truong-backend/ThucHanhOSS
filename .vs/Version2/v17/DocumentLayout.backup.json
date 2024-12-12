@@ -1,49 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\",
+  "WorkspaceRootPath": "D:\\DoAnOSS\\ThucHanhOSS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\m\u00E1y t\u00EDnh\\doanchuyennganh\\version2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\m\u00E1y t\u00EDnh\\doanchuyennganh\\version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\m\u00E1y t\u00EDnh\\doanchuyennganh\\version2\\controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\m\u00E1y t\u00EDnh\\doanchuyennganh\\version2\\views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\m\u00E1y t\u00EDnh\\doanchuyennganh\\version2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\m\u00E1y t\u00EDnh\\doanchuyennganh\\version2\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\m\u00E1y t\u00EDnh\\doanchuyennganh\\version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Services\\IVnPayService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Services\\VnPayService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\ViewModels\\VnPaymentResponseModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Libraries\\VnPayLibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Controllers\\GiohangController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,157 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\PagedResult.cs",
+              "RelativeDocumentMoniker": "Version2\\Models\\PagedResult.cs",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\PagedResult.cs",
+              "RelativeToolTip": "Version2\\Models\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:58:08.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sach.cs",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\Sach.cs",
+              "RelativeDocumentMoniker": "Version2\\Models\\Sach.cs",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\Sach.cs",
+              "RelativeToolTip": "Version2\\Models\\Sach.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:52:38.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:40:07.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Version2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Version2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAALEAAAAAAAAAAAAAACIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T21:17:39.952Z",
+              "WhenOpened": "2024-12-12T16:37:09.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Version2\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Version2\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T21:17:18.265Z",
+              "WhenOpened": "2024-12-12T16:37:05.068Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Views\\Danhmucs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Version2\\Views\\Danhmucs\\Index.cshtml",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Views\\Danhmucs\\Index.cshtml",
-              "RelativeToolTip": "Version2\\Views\\Danhmucs\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T19:21:08.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Danhmuc.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Models\\Danhmuc.cs",
-              "RelativeDocumentMoniker": "Version2\\Models\\Danhmuc.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Models\\Danhmuc.cs",
-              "RelativeToolTip": "Version2\\Models\\Danhmuc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T19:13:42.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DanhmucsController.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Controllers\\DanhmucsController.cs",
-              "RelativeDocumentMoniker": "Version2\\Controllers\\DanhmucsController.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Controllers\\DanhmucsController.cs",
-              "RelativeToolTip": "Version2\\Controllers\\DanhmucsController.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAIwBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T19:13:28.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\appsettings.json",
-              "RelativeDocumentMoniker": "Version2\\appsettings.json",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\appsettings.json",
-              "RelativeToolTip": "Version2\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-09T17:16:29.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Program.cs",
-              "RelativeDocumentMoniker": "Version2\\Program.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnChuyenNganh\\Version2\\Program.cs",
-              "RelativeToolTip": "Version2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T17:16:27.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IVnPayService.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Services\\IVnPayService.cs",
-              "RelativeDocumentMoniker": "..\\Version2\\Version2\\Services\\IVnPayService.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Services\\IVnPayService.cs",
-              "RelativeToolTip": "..\\Version2\\Version2\\Services\\IVnPayService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:16:07.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VnPayService.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Services\\VnPayService.cs",
-              "RelativeDocumentMoniker": "..\\Version2\\Version2\\Services\\VnPayService.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Services\\VnPayService.cs",
-              "RelativeToolTip": "..\\Version2\\Version2\\Services\\VnPayService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAcwEsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:59:56.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VnPaymentResponseModel.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\ViewModels\\VnPaymentResponseModel.cs",
-              "RelativeDocumentMoniker": "..\\Version2\\Version2\\ViewModels\\VnPaymentResponseModel.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\ViewModels\\VnPaymentResponseModel.cs",
-              "RelativeToolTip": "..\\Version2\\Version2\\ViewModels\\VnPaymentResponseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:04:41.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VnPayLibrary.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Libraries\\VnPayLibrary.cs",
-              "RelativeDocumentMoniker": "..\\Version2\\Version2\\Libraries\\VnPayLibrary.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Libraries\\VnPayLibrary.cs",
-              "RelativeToolTip": "..\\Version2\\Version2\\Libraries\\VnPayLibrary.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:02:37.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GiohangController.cs",
-              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Controllers\\GiohangController.cs",
-              "RelativeDocumentMoniker": "..\\Version2\\Version2\\Controllers\\GiohangController.cs",
-              "ToolTip": "C:\\Users\\truong\\OneDrive\\M\u00E1y t\u00EDnh\\Version2\\Version2\\Controllers\\GiohangController.cs",
-              "RelativeToolTip": "..\\Version2\\Version2\\Controllers\\GiohangController.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAIwOIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T01:24:21.807Z"
             }
           ]
         }
