@@ -19,11 +19,49 @@ namespace Version2.Controllers
         }
 
         // GET: Khachhangs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchTerm, int page = 1)
         {
-            return _context.Khachhangs != null ?
-                        View(await _context.Khachhangs.ToListAsync()) :
-                        Problem("Entity set 'HeThongBanSachContext.Khachhangs'  is null.");
+            ViewBag.ls = _context.Khachhangs;
+
+            const int pageSize = 10;
+
+            if (_context.Danhmucs == null)
+            {
+                return Problem("Entity set 'HeThongBanSachContext.TacGia' is null.");
+            }
+
+            // Tìm kiếm theo tên hoặc quốc tịch
+            IQueryable<Khachhang> tacGiasQuery = _context.Khachhangs;
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                tacGiasQuery = tacGiasQuery.Where(t => t.TenKhachHang.Contains(searchTerm));
+            }
+
+            // Tổng số mục và trang
+            int totalItems = await tacGiasQuery.CountAsync();
+            int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+            // Lấy tác giả với phân trang
+            var tacGias = await tacGiasQuery
+            .OrderByDescending(t => t.IdkhachHang)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            // Kiểm tra nếu không có tác giả nào trong danh sách
+            if (!tacGias.Any())
+            {
+                ViewBag.Message = "Không có danh mục cần tìm hoặc danh sách rỗng.";
+            }
+
+
+
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = totalPages;
+            ViewBag.SearchTerm = searchTerm; // Lưu giá trị tìm kiếm trong ViewBag
+
+            return View(tacGias);
         }
 
         // GET: Khachhangs/Details/5

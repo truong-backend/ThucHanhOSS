@@ -14,11 +14,11 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="IdphieuDatHang" class="control-label"></label>
-                <select asp-for="IdphieuDatHang" class ="form-control" asp-items="ViewBag.IdphieuDatHang"></select>
+                <select asp-for="IdphieuDatHang" class="form-control" asp-items="ViewBag.IdphieuDatHang"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Idsach" class="control-label"></label>
-                <select asp-for="Idsach" class ="form-control" asp-items="ViewBag.Idsach"></select>
+                <select asp-for="Idsach" class="form-control" asp-items="ViewBag.Idsach"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Gia" class="control-label"></label>
@@ -37,5 +37,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

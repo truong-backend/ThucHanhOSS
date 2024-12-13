@@ -18,26 +18,27 @@
             <!-- Nhà Sách Tech -->
             <a href="/" class="text-2xl md:text-3xl font-bold mb-2 md:mb-0">Nhà Sách Tech</a>
             <div class="ml-auto flex items-center space-x-2 md:space-x-4">
-            <a href="/" class="text-sm md:text-base hover:text-gray-300">Trang chủ</a>
+                <a href="/" class="text-sm md:text-base hover:text-gray-300">Trang chủ</a>
                 <a href="/" class="text-sm md:text-base hover:text-gray-300">Giới thiệu</a>
                 <a href="/" class="text-sm md:text-base hover:text-gray-300">Tin tức</a>
                 <a href="/" class="text-sm md:text-base hover:text-gray-300">Liên hệ</a>
             </div>
             <!-- Đặt Trang chủ sang bên phải -->
             <div class="ml-auto flex items-center space-x-2 md:space-x-4">
-                
+
                 <!-- Tìm kiếm -->
                 <form action="@Url.Action("Search", "Home")" method="get" class="relative flex items-center">
                     <input type="text" name="query" placeholder="Tìm kiếm sách..."
                            class="p-2 rounded-md bg-white text-black w-full md:w-64 pr-10 border-b-2 border-black focus:outline-none" />
                     <i class="fa fa-search absolute right-2 text-gray-500"></i>
                 </form>
-                <a href="@Url.Action("", "")" class="relative hover:text-gray-300">
+                <a href="@Url.Action("Index", "Giohang")" class="relative hover:text-gray-300">
                     <i class="fa fa-shopping-bag text-lg"></i>
                     <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full" style="display: none;">
                         0
                     </span>
                 </a>
+
                 <a href="@Url.Action("Index", "Donhangs")" class="relative hover:text-gray-300">
                     <i class="fa fa-shopping-bag text-lg"></i>
                     <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full" style="display: none;">
@@ -54,36 +55,30 @@
                         var session = Context.Session.GetString("Khachhang");
                         if (!string.IsNullOrEmpty(session))
                         {
-                            try
-                            {
-                                // Deserialize JSON thành đối tượng
-                                var kh = JsonConvert.DeserializeObject<dynamic>(session);
-                                <span class="text-gray-800 mr-4">@kh.TenKhachHang</span>
-                                <a href="@Url.Action("Logout", "Home")">
-                                    <button class="bg-red-500 hover:bg-red-400 text-white px-4 py-2 rounded-md">Đăng Xuất</button>
-                                </a>
-                            }
-                            catch (Exception ex)
-                            {
-                            // Xử lý lỗi nếu JSON không hợp lệ
-                                <span class="text-red-500">Lỗi dữ liệu phiên</span>
-                            }
-                        }
-                        else
-                        {
-                            <!-- Nếu người dùng chưa đăng nhập -->
-                            <a href="@Url.Action("Login", "Home")">
-                                <button class="px-6 py-3 sm:px-8 sm:py-4 bg-white text-black font-semibold border border-gray-300 rounded-md hover:bg-gray-100 hover:text-black transition">
-                                    Đăng nhập
-                                </button>
-                            </a>
-                            <a href="@Url.Action("Register", "Home")">
-                                <button class="px-6 py-3 sm:px-8 sm:py-4 bg-white text-black font-semibold border border-gray-300 rounded-md hover:bg-gray-100 hover:text-black transition">
-                                    Đăng ký
-                                </button>
+                            // Deserialize JSON thành đối tượng
+                            var kh = JsonConvert.DeserializeObject<dynamic>(session);
+                            <span class="text-gray-800 mr-4">@kh.TenKhachHang</span>
+                            <a href="@Url.Action("Logout", "Home")">
+                                <button class="bg-red-500 hover:bg-red-400 text-white px-4 py-2 rounded-md">Đăng Xuất</button>
                             </a>
                         }
+                        
+                    
+                    else
+                    {
+                        <!-- Nếu người dùng chưa đăng nhập -->
+                        <a href="@Url.Action("Login", "Home")">
+                            <button class="px-6 py-3 sm:px-8 sm:py-4 bg-white text-black font-semibold border border-gray-300 rounded-md hover:bg-gray-100 hover:text-black transition">
+                                Đăng nhập
+                            </button>
+                        </a>
+                        <a href="@Url.Action("Register", "Home")">
+                            <button class="px-6 py-3 sm:px-8 sm:py-4 bg-white text-black font-semibold border border-gray-300 rounded-md hover:bg-gray-100 hover:text-black transition">
+                                Đăng ký
+                            </button>
+                        </a>
                     }
+                }
 
             </div>
         </div>
@@ -108,9 +103,9 @@
                         <ul class="space-y-2 text-gray-700">
                             @* @foreach (var sach in Model.Saches)
                             {
-                                <li>
-                                    <a href="#" class="hover:text-blue-600">@sach.TenSach</a>
-                                </li>
+                            <li>
+                            <a href="#" class="hover:text-blue-600">@sach.TenSach</a>
+                            </li>
                             } *@
                         </ul>
                         <a href="#" class="text-blue-600 hover:underline">Xem thêm</a>
@@ -122,9 +117,9 @@
                         <ul class="space-y-2 text-gray-700">
                             @* @foreach (var loaiSach in Model.LoaiSaches)
                             {
-                                <li>
-                                    <a href="#" class="hover:text-blue-600">@loaiSach.TenDanhMuc</a>
-                                </li>
+                            <li>
+                            <a href="#" class="hover:text-blue-600">@loaiSach.TenDanhMuc</a>
+                            </li>
                             } *@
                         </ul>
                         <a href="#" class="text-blue-600 hover:underline">Xem thêm</a>
@@ -136,9 +131,9 @@
                         <ul class="space-y-2 text-gray-700">
                             @* @foreach (var tacGia in Model.TacGias)
                             {
-                                <li>
-                                    <a href="#" class="hover:text-blue-600">@tacGia.TenTacGia</a>
-                                </li>
+                            <li>
+                            <a href="#" class="hover:text-blue-600">@tacGia.TenTacGia</a>
+                            </li>
                             } *@
                         </ul>
                         <a href="#" class="text-blue-600 hover:underline">Xem thêm</a>
@@ -164,11 +159,12 @@
                 <!-- Sorting Dropdown -->
                 <div class="flex justify-between items-center mb-6">
                     <h4 class="text-lg font-semibold text-gray-800">Danh Sách Sách</h4>
-                    <select class="bg-gray-200 p-2 rounded-lg">
+                    <select id="sort-dropdown" class="bg-gray-200 p-2 rounded-lg">
                         <option value="asc">Giá từ thấp đến cao</option>
                         <option value="desc">Giá từ cao xuống thấp</option>
                         <option value="latest">Mới nhất</option>
                     </select>
+
                 </div>
 
                 <!-- Book List -->
@@ -182,42 +178,42 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-6">
 
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div>
-                        <h2 class="text-lg font-bold mb-4">NHÀ XUẤT BẢN TỔNG HỢP THÀNH PHỐ HỒ CHÍ MINH</h2>
-                        <p class="mb-2"><i class="fas fa-map-marker-alt"></i> 62 Nguyễn Thị Minh Khai, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh</p>
-                        <p class="mb-2"><i class="fas fa-phone"></i> (028) 38.256.713 </p>
-                        <p class="mb-2"><i class="fas fa-envelope"></i> tonghop@nxbhcm.com.vn</p>
-                    </div>
-                    <div>
-                        <h2 class="text-lg font-bold mb-4">VỀ CHÚNG TÔI</h2>
-                        <ul>
-                            <li class="mb-2"><a href="#" class="hover:underline">Giới Thiệu</a></li>
-                            <li class="mb-2"><a href="#" class="hover:underline">Tin Tức</a></li>
-                            <li class="mb-2"><a href="#" class="hover:underline">Liên Hệ</a></li>
-                            <li class="mb-2"><a href="#" class="hover:underline">Đăng Ký</a></li>
-                            
-                            <li class="mb-2"><a href="#" class="hover:underline">Tài Khoản</a></li>
-                           
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="text-lg font-bold mb-4">HỖ TRỢ</h2>
-                        <ul>
-                            <li class="mb-2"><a href="#" class="hover:underline">Hotline: (028) 38 256 713</a></li>
-                            <li class="mb-2"><a href="#" class="hover:underline">Hướng Dẫn Khắc Phục Một Số Lỗi Không Xem Được Ebook</a></li>
-                            <li class="mb-2"><a href="#" class="hover:underline">Hướng Dẫn Mua Ebook</a></li>
-                            <li class="mb-2"><a href="#" class="hover:underline">Hướng Dẫn Đọc Ebook</a></li>
-                            <li class="mb-2"><a href="#" class="hover:underline">Quy Định Sử Dụng</a></li>
-                        </ul>
-                    </div>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h2 class="text-lg font-bold mb-4">NHÀ XUẤT BẢN TỔNG HỢP THÀNH PHỐ HỒ CHÍ MINH</h2>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt"></i> 62 Nguyễn Thị Minh Khai, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh</p>
+                    <p class="mb-2"><i class="fas fa-phone"></i> (028) 38.256.713 </p>
+                    <p class="mb-2"><i class="fas fa-envelope"></i> tonghop@nxbhcm.com.vn</p>
                 </div>
-                <div class="text-center mt-8">
-                    <p>Copyrights © by sachweb team. All rights reserved</p>
+                <div>
+                    <h2 class="text-lg font-bold mb-4">VỀ CHÚNG TÔI</h2>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="hover:underline">Giới Thiệu</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Tin Tức</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Liên Hệ</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Đăng Ký</a></li>
+
+                        <li class="mb-2"><a href="#" class="hover:underline">Tài Khoản</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-lg font-bold mb-4">HỖ TRỢ</h2>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="hover:underline">Hotline: (028) 38 256 713</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Hướng Dẫn Khắc Phục Một Số Lỗi Không Xem Được Ebook</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Hướng Dẫn Mua Ebook</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Hướng Dẫn Đọc Ebook</a></li>
+                        <li class="mb-2"><a href="#" class="hover:underline">Quy Định Sử Dụng</a></li>
+                    </ul>
                 </div>
             </div>
-   
+            <div class="text-center mt-8">
+                <p>Copyrights © by sachweb team. All rights reserved</p>
+            </div>
+        </div>
+
 
     </footer>
 
@@ -226,3 +222,10 @@
 
 </body>
 </html>
+<script>
+    document.getElementById("sort-dropdown").addEventListener("change", function () {
+        const sortValue = this.value;
+        const url = `/Home/SortBooks?sort=${sortValue}`;
+        window.location.href = url;
+    });
+</script>

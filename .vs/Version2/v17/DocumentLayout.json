@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OSS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\views\\donhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\donhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\controllers\\phieudathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\phieudathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\views\\phieudathangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\phieudathangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\views\\phieudathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\phieudathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\views\\phieudathangs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\phieudathangs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\oss\\version2\\views\\phieudathangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\phieudathangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 205,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Donhang.cs",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Models\\Donhang.cs",
+              "RelativeDocumentMoniker": "Version2\\Models\\Donhang.cs",
+              "ToolTip": "D:\\OSS\\Version2\\Models\\Donhang.cs",
+              "RelativeToolTip": "Version2\\Models\\Donhang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:22:30.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\OSS\\Version2\\appsettings.json",
+              "RelativeDocumentMoniker": "Version2\\appsettings.json",
+              "ToolTip": "D:\\OSS\\Version2\\appsettings.json",
+              "RelativeToolTip": "Version2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T21:15:40.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Views\\Donhangs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Donhangs\\Index.cshtml",
+              "ToolTip": "D:\\OSS\\Version2\\Views\\Donhangs\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Donhangs\\Index.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T21:14:38.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\OSS\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T20:49:09.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhieudathangsController.cs",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Controllers\\PhieudathangsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\PhieudathangsController.cs",
+              "ToolTip": "D:\\OSS\\Version2\\Controllers\\PhieudathangsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\PhieudathangsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T20:36:23.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Phieudathangs\\Edit.cshtml",
+              "ToolTip": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Edit.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Edit.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T20:35:04.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Details.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Phieudathangs\\Details.cshtml",
+              "ToolTip": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Details.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T20:35:02.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Phieudathangs\\Delete.cshtml",
+              "ToolTip": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Delete.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Delete.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T20:34:59.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Phieudathangs\\Create.cshtml",
+              "ToolTip": "D:\\OSS\\Version2\\Views\\Phieudathangs\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T20:34:55.264Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

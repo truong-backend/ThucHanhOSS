@@ -4,41 +4,54 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1 class="text-3xl font-bold text-center my-6 text-gray-800">Chỉnh sửa</h1>
 
-<h4>Phieudathang</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdphieuDatHang" />
-            <div class="form-group">
-                <label asp-for="IdkhachHang" class="control-label"></label>
-                <select asp-for="IdkhachHang" class="form-control" asp-items="ViewBag.IdkhachHang"></select>
-                <span asp-validation-for="IdkhachHang" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NgayLapHoaDon" class="control-label"></label>
-                <input asp-for="NgayLapHoaDon" class="form-control" />
-                <span asp-validation-for="NgayLapHoaDon" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TrangThaiThanhToan" class="control-label"></label>
-                <input asp-for="TrangThaiThanhToan" class="form-control" />
-                <span asp-validation-for="TrangThaiThanhToan" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<h4 class="text-xl font-semibold text-center text-gray-600 mb-4">Phiếu đặt hàng</h4>
+<hr class="my-4 border-gray-300" />
+
+<div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <form asp-action="Edit" class="space-y-6">
+        <div asp-validation-summary="ModelOnly" class="text-red-500 mb-4"></div>
+
+        <!-- Hidden field for IdphieuDatHang -->
+        <input type="hidden" asp-for="IdphieuDatHang" />
+
+        <!-- Customer dropdown -->
+        <div class="form-group">
+            <label asp-for="IdkhachHang" class="block text-lg font-medium text-gray-700">Khách hàng</label>
+            <select asp-for="IdkhachHang" class="form-select w-full p-3 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <!-- The options will be populated dynamically by ViewBag -->
+            </select>
+            <span asp-validation-for="IdkhachHang" class="text-red-500 mt-1 block"></span>
+        </div>
+
+        <!-- NgayLapHoaDon -->
+        <div class="form-group">
+            <label asp-for="NgayLapHoaDon" class="block text-lg font-medium text-gray-700">Ngày lập hóa đơn</label>
+            <input asp-for="NgayLapHoaDon" class="form-input w-full p-3 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="NgayLapHoaDon" class="text-red-500 mt-1 block"></span>
+        </div>
+
+        <!-- TrangThaiThanhToan -->
+        <div class="form-group">
+            <label asp-for="TrangThaiThanhToan" class="block text-lg font-medium text-gray-700">Trạng thái thanh toán</label>
+            <input asp-for="TrangThaiThanhToan" class="form-input w-full p-3 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <span asp-validation-for="TrangThaiThanhToan" class="text-red-500 mt-1 block"></span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Lưu</button>
+        </div>
+    </form>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="mt-6 text-center">
+    <a asp-action="Index" class="text-blue-500 hover:text-blue-700 text-lg">Quay lại danh sách</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

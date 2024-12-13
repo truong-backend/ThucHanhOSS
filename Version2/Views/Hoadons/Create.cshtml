@@ -10,27 +10,40 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Chọn Phiếu Đặt Hàng -->
             <div class="form-group">
                 <label asp-for="IdphieuDatHang" class="control-label"></label>
-                <select asp-for="IdphieuDatHang" class ="form-control" asp-items="ViewBag.IdphieuDatHang"></select>
+                <select asp-for="IdphieuDatHang" class="form-control" asp-items="ViewBag.IdphieuDatHang">
+                    <option value="">-- Chọn Phiếu Đặt Hàng --</option> <!-- Thêm tùy chọn mặc định -->
+                </select>
+                <span asp-validation-for="IdphieuDatHang" class="text-danger"></span>
             </div>
+
+            <!-- Ngày Lập -->
             <div class="form-group">
                 <label asp-for="NgayLap" class="control-label"></label>
-                <input asp-for="NgayLap" class="form-control" />
+                <input asp-for="NgayLap" class="form-control" type="date" />
                 <span asp-validation-for="NgayLap" class="text-danger"></span>
             </div>
+
+            <!-- Tổng Tiền -->
             <div class="form-group">
                 <label asp-for="TongTien" class="control-label"></label>
-                <input asp-for="TongTien" class="form-control" />
+                <input asp-for="TongTien" class="form-control" type="number" step="0.01" min="0" />
                 <span asp-validation-for="TongTien" class="text-danger"></span>
             </div>
+
+            <!-- Trạng Thái -->
             <div class="form-group">
                 <label asp-for="TrangThai" class="control-label"></label>
                 <input asp-for="TrangThai" class="form-control" />
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>
+
+            <!-- Submit -->
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -43,5 +56,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
