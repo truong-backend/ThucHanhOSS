@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\truong\\OneDrive\\Máy tính\\DoAnChuyenNganh\\Version2\\Version2.csproj": {}
+    "D:\\OSS\\Version2\\Version2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\truong\\OneDrive\\Máy tính\\DoAnChuyenNganh\\Version2\\Version2.csproj": {
+    "D:\\OSS\\Version2\\Version2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\truong\\OneDrive\\Máy tính\\DoAnChuyenNganh\\Version2\\Version2.csproj",
+        "projectUniqueName": "D:\\OSS\\Version2\\Version2.csproj",
         "projectName": "Version2",
-        "projectPath": "C:\\Users\\truong\\OneDrive\\Máy tính\\DoAnChuyenNganh\\Version2\\Version2.csproj",
-        "packagesPath": "C:\\Users\\truong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\truong\\OneDrive\\Máy tính\\DoAnChuyenNganh\\Version2\\obj\\",
+        "projectPath": "D:\\OSS\\Version2\\Version2.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\OSS\\Version2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\truong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
