@@ -565,3 +565,4 @@ D:\OSS\Version2\obj\Debug\net6.0\refint\Version2.dll
 D:\OSS\Version2\obj\Debug\net6.0\Version2.pdb
 D:\OSS\Version2\obj\Debug\net6.0\Version2.genruntimeconfig.cache
 D:\OSS\Version2\obj\Debug\net6.0\ref\Version2.dll
+D:\OSS\Version2\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutNguoiGiaoHang.cshtml.rz.scp.css
