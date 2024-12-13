@@ -19,6 +19,35 @@ namespace Version2.Controllers
         {
             _context = context;
         }
+        public IActionResult Search(string query, int page = 1)
+        {
+            int pageSize = 8;
+
+            var booksQuery = _context.Saches.AsQueryable();
+
+            if (!string.IsNullOrEmpty(query))
+            {
+                booksQuery = booksQuery.Where(s => s.TenSach.Contains(query));
+            }
+
+            var books = booksQuery
+                .Select(s => new Sach
+                {
+                    Idsach = s.Idsach,
+                    TenSach = s.TenSach,
+                    HinhAnh = s.HinhAnh,
+                    Gia = s.Gia,
+                    IdnhaXuatBanNavigation = new Nhaxuatban
+                    {
+                        TenNhaXuatBan = s.IdnhaXuatBanNavigation.TenNhaXuatBan
+                    }
+                })
+                .ToPagedList(page, pageSize);
+
+            ViewBag.Query = query;
+
+            return View("Index", books);
+        }
 
         public IActionResult Index(int? page)
         {
