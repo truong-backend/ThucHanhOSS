@@ -10739,19 +10739,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Version2.csproj",
+      "projectUniqueName": "D:\\OSS\\Version2\\Version2.csproj",
       "projectName": "Version2",
-      "projectPath": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Version2.csproj",
-      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\obj\\",
+      "projectPath": "D:\\OSS\\Version2\\Version2.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\OSS\\Version2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

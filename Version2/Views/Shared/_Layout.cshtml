@@ -38,7 +38,18 @@
                         0
                     </span>
                 </a>
-
+                <a href="@Url.Action("Index", "Donhangs")" class="relative hover:text-gray-300">
+                    <i class="fa fa-shopping-bag text-lg"></i>
+                    <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full" style="display: none;">
+                        0
+                    </span>
+                </a>
+                <a href="@Url.Action("Index", "Phieudathangs")" class="relative hover:text-gray-300">
+                    <i class="fa fa-shopping-bag text-lg"></i>
+                    <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full" style="display: none;">
+                        0
+                    </span>
+                </a>
                     @{
                         var session = Context.Session.GetString("Khachhang");
                         if (!string.IsNullOrEmpty(session))
