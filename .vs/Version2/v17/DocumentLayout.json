@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "D:\\DoAnOSS\\ThucHanhOSS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\AppData\\Local\\SourceServer\\84008c0ab1957b016fe6fbd04e50222824d033731d28f823165b771626d05a33\\Version2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\views\\phieudathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\phieudathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\libraries\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\libraries\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\AppData\\Local\\SourceServer\\84008c0ab1957b016fe6fbd04e50222824d033731d28f823165b771626d05a33\\Version2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\viewmodels\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\viewmodels\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,51 +34,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\AppData\\Local\\SourceServer\\84008c0ab1957b016fe6fbd04e50222824d033731d28f823165b771626d05a33\\Version2\\Program.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\AppData\\Local\\SourceServer\\84008c0ab1957b016fe6fbd04e50222824d033731d28f823165b771626d05a33\\Version2\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T20:17:08.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\appsettings.json",
-              "RelativeDocumentMoniker": "Version2\\appsettings.json",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\appsettings.json",
-              "RelativeToolTip": "Version2\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-13T20:16:41.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "Version2\\Controllers\\PaymentController.cs",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "Version2\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T20:15:55.403Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAUwE0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T20:28:32.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VnPayLibrary.cs",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Libraries\\VnPayLibrary.cs",
-              "RelativeDocumentMoniker": "Version2\\Libraries\\VnPayLibrary.cs",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Libraries\\VnPayLibrary.cs",
-              "RelativeToolTip": "Version2\\Libraries\\VnPayLibrary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAPAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC8AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T20:27:31.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\appsettings.json",
+              "RelativeDocumentMoniker": "Version2\\appsettings.json",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\appsettings.json",
+              "RelativeToolTip": "Version2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T20:26:03.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentType.cs",
+              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\ViewModels\\PaymentType.cs",
+              "RelativeDocumentMoniker": "Version2\\ViewModels\\PaymentType.cs",
+              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\ViewModels\\PaymentType.cs",
+              "RelativeToolTip": "Version2\\ViewModels\\PaymentType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T20:15:29.959Z",
+              "WhenOpened": "2024-12-13T20:24:17.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\AppData\\Local\\SourceServer\\84008c0ab1957b016fe6fbd04e50222824d033731d28f823165b771626d05a33\\Version2\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\AppData\\Local\\SourceServer\\84008c0ab1957b016fe6fbd04e50222824d033731d28f823165b771626d05a33\\Version2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T20:17:08.201Z",
               "EditorCaption": ""
             }
           ]
