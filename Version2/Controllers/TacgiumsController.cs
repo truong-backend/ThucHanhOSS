@@ -106,7 +106,7 @@ namespace Version2.Controllers
                     x.NgaySinh = ls.NgaySinh;
                     x.QuocTich = ls.QuocTich;
                     db.SaveChanges();
-;
+                    ;
                 }
                 return RedirectToAction("Index");
             }

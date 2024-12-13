@@ -78,6 +78,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uaGFuZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DoAnOSS/ThucHanhOSS/Version2/Views/Donhangs/UI_NguoiGiaoHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uaGFuZ3NcVUlfTmd1b2lHaWFvSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DoAnOSS/ThucHanhOSS/Version2/Views/Giohang/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvaGFuZ1xDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DoAnOSS/ThucHanhOSS/Version2/Views/Giohang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvaGFuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DoAnOSS/ThucHanhOSS/Version2/Views/Giohang/PaymentFail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvaGFuZ1xQYXltZW50RmFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DoAnOSS/ThucHanhOSS/Version2/Views/Giohang/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvaGFuZ1xTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DoAnOSS/ThucHanhOSS/Version2/Views/Hoadons/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hZG9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -281,6 +301,10 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/DoAnOSS/ThucHanhOSS/Version2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jas8t5rx6m
+
+[D:/DoAnOSS/ThucHanhOSS/Version2/Views/Shared/_LayoutNguoiGiaoHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROZ3VvaUdpYW9IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-3qp6oi5n1c
 
 [D:/DoAnOSS/ThucHanhOSS/Version2/Views/Shared/_Layout_Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQWRtaW4uY3NodG1s

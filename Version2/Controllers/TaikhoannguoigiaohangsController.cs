@@ -154,14 +154,14 @@ namespace Version2.Controllers
             {
                 _context.Taikhoannguoigiaohangs.Remove(taikhoannguoigiaohang);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool TaikhoannguoigiaohangExists(int id)
         {
-          return (_context.Taikhoannguoigiaohangs?.Any(e => e.IdtaiKhoan == id)).GetValueOrDefault();
+            return (_context.Taikhoannguoigiaohangs?.Any(e => e.IdtaiKhoan == id)).GetValueOrDefault();
         }
     }
 }

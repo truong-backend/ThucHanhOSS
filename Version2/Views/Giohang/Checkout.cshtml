@@ -1,0 +1,71 @@
+﻿@model List<CartItem>
+@using Version2.ViewModels;
+
+@{
+    ViewData["Title"] = "Xác nhận thanh toán";
+}
+
+<h2 class="text-2xl font-semibold mb-6">@ViewData["Title"]</h2>
+
+@if (!Model.Any())
+{
+    <div class="text-center">
+        <p class="text-gray-500 mb-4">Giỏ hàng của bạn đang trống. Không thể thực hiện thanh toán.</p>
+        <a asp-controller="Home" asp-action="Index"
+           class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+            Tiếp tục mua sắm
+        </a>
+    </div>
+}
+else
+{
+    <form asp-controller="Giohang" asp-action="Checkout" method="post" class="space-y-6">
+        <div>
+            <h4 class="text-lg font-semibold mb-4">Phương thức thanh toán</h4>
+            <div class="flex flex-col gap-4">
+                <input type="submit" name="payment" value="Đặt hàng (COD)"
+                       class="w-full px-4 py-2 border border-gray-300 rounded text-primary hover:bg-gray-50 transition cursor-pointer">
+                <input type="submit" name="payment" value="Thanh"
+                       class="w-full px-4 py-2 border border-gray-300 rounded text-primary hover:bg-gray-50 transition cursor-pointer">
+                <div id="paypal-button-container" class="mt-4"></div>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="text-lg font-semibold mb-4">Danh sách sản phẩm</h4>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                    <thead class="bg-gray-100 text-sm uppercase text-gray-600">
+                        <tr>
+                            <th class="px-4 py-3 border">Tên sách</th>
+                            <th class="px-4 py-3 border">Giá</th>
+                            <th class="px-4 py-3 border">Số lượng</th>
+                            <th class="px-4 py-3 border">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="border-b hover:bg-gray-50 transition">
+                                <td class="px-4 py-3">@item.TenSach</td>
+                                <td class="px-4 py-3 text-gray-700">@item.Gia.ToString("C")</td>
+                                <td class="px-4 py-3 text-center">@item.SoLuong</td>
+                                <td class="px-4 py-3 text-gray-700">@((item.Gia * item.SoLuong).ToString("C"))</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-6">
+            <h4 class="text-xl font-semibold text-gray-700">
+                Tổng tiền: @Model.Sum(i => i.Gia * i.SoLuong).ToString("C")
+            </h4>
+            <button type="submit"
+                    class="px-6 py-3 bg-green-500 text-white text-lg rounded hover:bg-green-600 transition">
+                Xác nhận thanh toán
+            </button>
+        </div>
+    </form>
+}

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Version2.Models.Phieudathang>
 
 @{
-    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
@@ -19,50 +19,49 @@
 <div class="bg-white shadow-lg rounded-lg p-6">
     <div class="flex justify-between items-center mb-4">
         <h4 class="text-xl font-semibold text-gray-700">Danh sách Phiếu Đặt Hàng</h4>
-        <a href="@Url.Action("Create", "Phieudathangs")"
-           class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
-            Thêm Phiếu Đặt Hàng
-        </a>
+        @*         <a href="@Url.Action("Create", "Phieudathangs")"
+        class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
+        Thêm Phiếu Đặt Hàng
+        </a> *@
     </div>
 
     <table class="table-auto w-full border-collapse border border-gray-200">
         <thead>
             <tr class="bg-gradient-to-r from-green-600 to-blue-500 text-white">
-                <th class="px-4 py-2 border">Ngày Lập</th>
-                <th class="px-4 py-2 border">Tổng Tiền</th>
-                <th class="px-4 py-2 border">Trạng Thái Thanh Toán</th>
                 <th class="px-4 py-2 border">Khách Hàng</th>
-                <th class="px-4 py-2 border">Chức Năng</th>
+                <th class="px-4 py-2 border">Ngày Lập</th>
+                <th class="px-4 py-2 border">Trạng Thái Thanh Toán</th>
             </tr>
         </thead>
         <tbody class="divide-y divide-gray-200">
             @foreach (var item in Model)
             {
                 <tr class="text-center hover:bg-gray-100 transition">
+                    <td class="px-4 py-2 border">@item.IdkhachHangNavigation?.TenKhachHang</td>
                     <td class="px-4 py-2 border">@item.NgayLapHoaDon?.ToString("yyyy-MM-dd")</td>
                     <td class="px-4 py-2 border">@item.TrangThaiThanhToan</td>
-                    <td class="px-4 py-2 border">@item.IdkhachHangNavigation?.IdkhachHang</td>
-                    <td class="px-4 py-2 border">
-                        <div class="flex justify-center space-x-4">
-                            <!-- Cập nhật -->
-                            <a href="@Url.Action("Edit", "Phieudathangs", new { id = item.IdphieuDatHang })"
-                               class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
-                                Cập nhật
-                            </a>
 
-                            <!-- Chi tiết -->
-                            <a href="@Url.Action("Details", "Phieudathangs", new { id = item.IdphieuDatHang })"
-                               class="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-md hover:bg-gradient-to-r hover:from-yellow-500 hover:to-orange-600 transition">
-                                Chi tiết
-                            </a>
+                    @*                     <td class="px-4 py-2 border">
+                <div class="flex justify-center space-x-4">
+                <!-- Cập nhật -->
+                <a href="@Url.Action("Edit", "Phieudathangs", new { id = item.IdphieuDatHang })"
+                class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
+                Cập nhật
+                </a>
 
-                            <!-- Xóa -->
-                            <a href="@Url.Action("Delete", "Phieudathangs", new { id = item.IdphieuDatHang })"
-                               class="px-3 py-1 bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-md hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-600 transition">
-                                Xóa
-                            </a>
-                        </div>
-                    </td>
+                <!-- Chi tiết -->
+                <a href="@Url.Action("Details", "Phieudathangs", new { id = item.IdphieuDatHang })"
+                class="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-md hover:bg-gradient-to-r hover:from-yellow-500 hover:to-orange-600 transition">
+                Chi tiết
+                </a>
+
+                <!-- Xóa -->
+                <a href="@Url.Action("Delete", "Phieudathangs", new { id = item.IdphieuDatHang })"
+                class="px-3 py-1 bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-md hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-600 transition">
+                Xóa
+                </a>
+                </div>
+                </td> *@
                 </tr>
             }
         </tbody>

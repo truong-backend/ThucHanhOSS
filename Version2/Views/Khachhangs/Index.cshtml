@@ -27,18 +27,18 @@
         <p class="text-4xl font-bold">@Model.Count()</p>
     </div>
 
-    
+
 </div>
 
 <!-- Table Section -->
 <div class="bg-white shadow-lg rounded-lg p-6">
-    <div class="flex justify-between items-center mb-4">
-        <h4 class="text-xl font-semibold text-gray-700">Danh sách Khách Hàng</h4>
-        <a href="@Url.Action("Create", "Khachhangs")"
-           class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
-            Thêm Khách Hàng
-        </a>
-    </div>
+    @*  <div class="flex justify-between items-center mb-4">
+    <h4 class="text-xl font-semibold text-gray-700">Danh sách Khách Hàng</h4>
+    <a href="@Url.Action("Create", "Khachhangs")"
+    class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
+    Thêm Khách Hàng
+    </a>
+    </div> *@
 
     <table class="table-auto w-full border-collapse border border-gray-200">
         <thead>
@@ -63,10 +63,10 @@
                     <td class="px-4 py-2 border">
                         <div class="flex justify-center space-x-4">
                             <!-- Cập nhật -->
-                            <a href="@Url.Action("Edit", "Khachhangs", new { id = khachHang.IdkhachHang })"
-                               class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
-                                Cập nhật
-                            </a>
+                            @*                             <a href="@Url.Action("Edit", "Khachhangs", new { id = khachHang.IdkhachHang })"
+                        class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
+                        Cập nhật
+                        </a> *@
 
                             <!-- Xóa -->
                             <a href="@Url.Action("Delete", "Khachhangs", new { id = khachHang.IdkhachHang })"
@@ -82,33 +82,38 @@
 </div>
 
 <!-- Pagination Section -->
-<nav class="mt-6 flex justify-center">
-    <ul class="flex items-center space-x-2">
-        <!-- Nút Trước -->
-        <li>
-            <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1, searchTerm = ViewBag.SearchTerm })"
-               class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition @(ViewBag.CurrentPage == 1 ? "pointer-events-none opacity-50" : "")">
-                Trước
-            </a>
-        </li>
+<div class="flex justify-center mt-4">
+    <nav>
+        <ul class="inline-flex -space-x-px">
+            @if (ViewBag.CurrentPage > 1)
+            {
+                <li>
+                    <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1, searchTerm = ViewBag.SearchTerm })"
+                       class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">
+                        Trước
+                    </a>
+                </li>
+            }
 
-        <!-- Số trang -->
-        @for (int i = 1; i <= ViewBag.TotalPages; i++)
-        {
-            <li>
-                <a href="@Url.Action("Index", new { page = i, searchTerm = ViewBag.SearchTerm })"
-                   class="px-4 py-2 rounded-md transition @(ViewBag.CurrentPage == i ? "bg-blue-500 text-white" : "bg-gray-200 hover:bg-gray-300")">
-                    @i
-                </a>
-            </li>
-        }
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li>
+                    <a href="@Url.Action("Index", new { page = i, searchTerm = ViewBag.SearchTerm })"
+                       class="px-3 py-2 leading-tight @((i == ViewBag.CurrentPage) ? "text-blue-600 bg-blue-50" : "text-gray-500 bg-white") border border-gray-300 hover:bg-gray-100 hover:text-gray-700">
+                        @i
+                    </a>
+                </li>
+            }
 
-        <!-- Nút Tiếp -->
-        <li>
-            <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1, searchTerm = ViewBag.SearchTerm })"
-               class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition @(ViewBag.CurrentPage == ViewBag.TotalPages ? "pointer-events-none opacity-50" : "")">
-                Tiếp
-            </a>
-        </li>
-    </ul>
-</nav>
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+            {
+                <li>
+                    <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1, searchTerm = ViewBag.SearchTerm })"
+                       class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">
+                        Sau
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

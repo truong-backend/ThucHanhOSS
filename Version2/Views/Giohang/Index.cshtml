@@ -1,0 +1,69 @@
+﻿@model List<CartItem>
+@using Version2.ViewModels;
+
+@{
+    ViewData["Title"] = "Giỏ hàng của bạn";
+}
+
+<h2 class="text-2xl font-semibold mb-4">@ViewData["Title"]</h2>
+
+@if (!Model.Any())
+{
+    <div class="text-center">
+        <p class="text-gray-500">Giỏ hàng của bạn đang trống.</p>
+        <a asp-controller="Home" asp-action="Index"
+           class="mt-4 inline-block px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            Tiếp tục mua sắm
+        </a>
+    </div>
+}
+else
+{
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+            <thead>
+                <tr class="bg-gray-100 text-left text-sm uppercase text-gray-600">
+                    <th class="px-6 py-3 border-b">Hình ảnh</th>
+                    <th class="px-6 py-3 border-b">Tên sách</th>
+                    <th class="px-6 py-3 border-b">Giá</th>
+                    <th class="px-6 py-3 border-b">Số lượng</th>
+                    <th class="px-6 py-3 border-b">Thành tiền</th>
+                    <th class="px-6 py-3 border-b text-center">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="border-b hover:bg-gray-50 transition">
+                        <td class="px-6 py-4">
+                            <img src="@Url.Content(item.HinhAnh)" alt="@item.TenSach" class="w-12 h-12 object-cover rounded">
+                        </td>
+                        <td class="px-6 py-4">@item.TenSach</td>
+                        <td class="px-6 py-4 text-gray-700">@item.Gia.ToString("C")</td>
+                        <td class="px-6 py-4">
+                            <input type="number" value="@item.SoLuong" min="1"
+                                   class="w-16 px-2 py-1 border rounded text-center">
+                        </td>
+                        <td class="px-6 py-4 text-gray-700">@((item.Gia * item.SoLuong).ToString("C"))</td>
+                        <td class="px-6 py-4 text-center">
+                            <a asp-controller="Giohang" asp-action="RemoveFromCart" asp-route-id="@item.IdSach"
+                               class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
+                                Xóa
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="flex justify-between items-center mt-6">
+        <h4 class="text-xl font-semibold text-gray-700">
+            Tổng tiền: @Model.Sum(i => i.Gia * i.SoLuong).ToString("C")
+        </h4>
+        <a asp-controller="Giohang" asp-action="Checkout"
+           class="px-6 py-3 bg-green-500 text-white text-lg rounded hover:bg-green-600">
+            Thanh toán
+        </a>
+    </div>
+}
