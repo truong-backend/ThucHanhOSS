@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Version2.csproj": {}
+    "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Version2.csproj": {}
   },
   "projects": {
-    "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Version2.csproj": {
+    "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Version2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Version2.csproj",
+        "projectUniqueName": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Version2.csproj",
         "projectName": "Version2",
-        "projectPath": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Version2.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\obj\\",
+        "projectPath": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Version2.csproj",
+        "packagesPath": "C:\\Users\\truong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\truong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
