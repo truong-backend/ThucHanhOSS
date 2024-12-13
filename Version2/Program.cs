@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Session;
 using Version2.Models;
+using Version2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +25,9 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true; // Chắc chắn rằng cookie là cần thiết cho hoạt động của ứng dụng
     options.IdleTimeout = TimeSpan.FromMinutes(1); // Thời gian hết hạn của session
 });
-;
+
+//Connect VNPay API
+builder.Services.AddScoped<IVnPayService, VnPayService>();
 
 var app = builder.Build();
 

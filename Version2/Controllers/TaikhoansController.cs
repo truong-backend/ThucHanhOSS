@@ -15,48 +15,39 @@ namespace Version2.Controllers
         // GET: TacGias
         public async Task<IActionResult> Index(string searchTerm, int page = 1)
         {
-            var sach = db.Taikhoans.Include(h => h.IdkhachHangNavigation).Include(h => h.IdkhachHangNavigation);
-            ViewBag.tk = sach.ToList();
-
             const int pageSize = 10;
 
             if (db.Taikhoans == null)
             {
-                return Problem("Entity set 'HeThongBanSachContext.TacGia' is null.");
+                return Problem("Entity set 'HeThongBanSachContext.Hoadons' is null.");
             }
 
-            // Tìm kiếm theo tên hoặc quốc tịch
-            IQueryable<Taikhoan> tacGiasQuery = db.Taikhoans;
+            // Truy vấn dữ liệu và nạp navigation properties
+            IQueryable<Taikhoan> hoadonQuery = db.Taikhoans.Include(h => h.IdkhachHangNavigation);
 
+            // Tìm kiếm theo trạng thái
             if (!string.IsNullOrEmpty(searchTerm))
             {
-                tacGiasQuery = tacGiasQuery.Where(t => t.TenDangNhap.Contains(searchTerm));
+                hoadonQuery = hoadonQuery.Where(h => h.TenDangNhap.Contains(searchTerm));
             }
 
-            // Tổng số mục và trang
-            int totalItems = await tacGiasQuery.CountAsync();
+            // Tổng số mục và tính số trang
+            int totalItems = await hoadonQuery.CountAsync();
             int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
 
-            // Lấy tác giả với phân trang
-            var tacGias = await tacGiasQuery
-                .OrderByDescending(t => t.IdtaiKhoan)
+            // Lấy dữ liệu với phân trang
+            var hoadons = await hoadonQuery
+                .OrderByDescending(h => h.IdtaiKhoan)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
 
-            // Kiểm tra nếu không có tác giả nào trong danh sách
-            if (!tacGias.Any())
-            {
-                ViewBag.Message = "Không có tác giả cần tìm hoặc danh sách rỗng.";
-            }
-
-
-
+            // Gửi dữ liệu phân trang và tìm kiếm sang View
             ViewBag.CurrentPage = page;
             ViewBag.TotalPages = totalPages;
-            ViewBag.SearchTerm = searchTerm; // Lưu giá trị tìm kiếm trong ViewBag
+            ViewBag.SearchTerm = searchTerm;
 
-            return View(tacGias);
+            return View(hoadons);
         }
         public async Task<IActionResult> Delete(int id)
         {

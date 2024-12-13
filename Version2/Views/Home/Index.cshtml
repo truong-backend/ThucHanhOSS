@@ -1,5 +1,4 @@
 ﻿@model X.PagedList.IPagedList<Version2.Models.Sach>
-
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     @foreach (var item in Model)
     {
@@ -54,3 +53,24 @@
         </ul>
     </nav>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn-add-to-cart").click(function (e) {
+            e.preventDefault();
+            var productId = $(this).data("id");
+
+            $.ajax({
+                url: '@Url.Action("AddToCart", "Giohang")',
+                type: 'POST',
+                data: { id: productId, quantity: 1 },
+                success: function (response) {
+                    alert("Sản phẩm đã được thêm vào giỏ hàng.");
+                },
+                error: function () {
+                    alert("Có lỗi xảy ra khi thêm sản phẩm vào giỏ hàng.");
+                }
+            });
+        });
+    });
+</script>

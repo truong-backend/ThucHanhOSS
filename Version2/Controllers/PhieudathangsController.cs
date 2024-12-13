@@ -19,10 +19,41 @@ namespace Version2.Controllers
         }
 
         // GET: Phieudathangs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchTerm, int page = 1)
         {
-            var heThongBanSachContext = _context.Phieudathangs.Include(p => p.IdkhachHangNavigation);
-            return View(await heThongBanSachContext.ToListAsync());
+            const int pageSize = 5; // Number of items per page
+
+            if (_context.Phieudathangs == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Phieudathangs' is null.");
+            }
+
+            // Base query
+            IQueryable<Phieudathang> query = _context.Phieudathangs.Include(p => p.IdkhachHangNavigation);
+
+            // Search functionality
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(p => p.TrangThaiThanhToan.Contains(searchTerm));
+            }
+
+            // Total items and pages calculation
+            int totalItems = await query.CountAsync();
+            int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+            // Retrieve paginated data
+            var phieudathangs = await query
+                .OrderByDescending(p => p.IdphieuDatHang) // Sorting by ID
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            // Pass pagination data to the View
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = totalPages;
+            ViewBag.SearchTerm = searchTerm;
+
+            return View(phieudathangs);
         }
 
         // GET: Phieudathangs/Details/5
@@ -154,14 +185,14 @@ namespace Version2.Controllers
             {
                 _context.Phieudathangs.Remove(phieudathang);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PhieudathangExists(int id)
         {
-          return (_context.Phieudathangs?.Any(e => e.IdphieuDatHang == id)).GetValueOrDefault();
+            return (_context.Phieudathangs?.Any(e => e.IdphieuDatHang == id)).GetValueOrDefault();
         }
     }
 }
