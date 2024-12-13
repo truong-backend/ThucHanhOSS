@@ -168,19 +168,18 @@ namespace Version2.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IddonHang,IdphieuDatHang,IdnguoiGiaoHang,NgayGiaoHang,TrangThai,GhiChu")] Donhang donhang)
         {
-            if (ModelState.IsValid)
-            {
+            
                 _context.Add(donhang);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            
             ViewData["IdnguoiGiaoHang"] = new SelectList(_context.Nguoigiaohangs, "IdnguoiGiaoHang", "IdnguoiGiaoHang", donhang.IdnguoiGiaoHang);
             ViewData["IdphieuDatHang"] = new SelectList(_context.Phieudathangs, "IdphieuDatHang", "IdphieuDatHang", donhang.IdphieuDatHang);
             return View(donhang);
-        }
+        }   
 
         // GET: Donhangs/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -204,7 +203,7 @@ namespace Version2.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IddonHang,IdphieuDatHang,IdnguoiGiaoHang,NgayGiaoHang,TrangThai,GhiChu")] Donhang donhang)
         {
             if (id != donhang.IddonHang)
@@ -212,8 +211,8 @@ namespace Version2.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 try
                 {
                     _context.Update(donhang);
@@ -231,7 +230,7 @@ namespace Version2.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
+            //}
             ViewData["IdnguoiGiaoHang"] = new SelectList(_context.Nguoigiaohangs, "IdnguoiGiaoHang", "IdnguoiGiaoHang", donhang.IdnguoiGiaoHang);
             ViewData["IdphieuDatHang"] = new SelectList(_context.Phieudathangs, "IdphieuDatHang", "IdphieuDatHang", donhang.IdphieuDatHang);
             return View(donhang);
@@ -259,7 +258,7 @@ namespace Version2.Controllers
 
         // POST: Donhangs/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Donhangs == null)
