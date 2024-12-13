@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Version2.Models.Donhang>
+
+@{
+    Layout = "~/Views/Shared/_LayoutNguoiGiaoHang.cshtml";
+}
+
+<div class="bg-white shadow rounded-lg p-6">
+    <h2 class="text-xl font-semibold text-gray-800 mb-4">Danh sách hóa đơn</h2>
+
+    <table class="table-auto w-full border-collapse border border-gray-200">
+        <thead>
+            <tr class="bg-gray-100">
+                <th class="border border-gray-200 px-4 py-2">ID Đơn Hàng</th>
+                <th class="border border-gray-200 px-4 py-2">ID Phiếu Đặt Hàng</th>
+                <th class="border border-gray-200 px-4 py-2">Ngày Lập</th>
+                <th class="border border-gray-200 px-4 py-2">Trạng Thái</th>
+                <th class="border border-gray-200 px-4 py-2">Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example Row -->
+             @foreach (var item in Model)
+            {
+                <tr class="text-center">
+                    <td class="px-4 py-2 border">@item.IddonHang</td>
+                    <td class="px-4 py-2 border">@item.IdphieuDatHang</td>
+                    <td class="px-4 py-2 border">@item.NgayGiaoHang?.ToString("yyyy-MM-dd")</td>
+                    <td class="px-4 py-2 border">@item.TrangThai</td>
+                    @* <td class="px-4 py-2 border"></td> *@
+                    <td class="px-4 py-2 border">
+                        @if (item.TrangThai == "Đang Giao")
+                        {
+                            <form method="post" action="@Url.Action("UpdateTrangThai", "Donhangs")">
+                                <input type="hidden" name="id" value="@item.IddonHang" />
+                                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                                    Xác nhận
+                                </button>
+                            </form>
+                            
+                        }
+                    </td>
+                </tr>
+            }
+            <!-- Add more rows dynamically -->
+        </tbody>
+    </table>
+</div>

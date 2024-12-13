@@ -33,10 +33,10 @@
 <div class="bg-white shadow-lg rounded-lg p-6">
     <div class="flex justify-between items-center mb-4">
         <h4 class="text-xl font-semibold text-gray-700">Danh sách Hóa Đơn</h4>
-        <a href="@Url.Action("Create", "Hoadons")"
-           class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
-            Thêm Hóa Đơn
-        </a>
+        @*         <a href="@Url.Action("Create", "Hoadons")"
+        class="px-4 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-500 transition">
+        Thêm Hóa Đơn
+        </a> *@
     </div>
 
     <table class="table-auto w-full border-collapse border border-gray-200">
@@ -46,7 +46,7 @@
                 <th class="px-4 py-2 border">Tổng Tiền</th>
                 <th class="px-4 py-2 border">Trạng Thái</th>
                 <th class="px-4 py-2 border">ID Phiếu Đặt Hàng</th>
-                <th class="px-4 py-2 border">Chức Năng</th>
+                @*                 <th class="px-4 py-2 border">Chức Năng</th> *@
             </tr>
         </thead>
         <tbody class="divide-y divide-gray-200">
@@ -57,27 +57,26 @@
                     <td class="px-4 py-2 border">@hoadon.TongTien</td>
                     <td class="px-4 py-2 border">@hoadon.TrangThai</td>
                     <td class="px-4 py-2 border">@hoadon.IdphieuDatHangNavigation.IdphieuDatHang</td>
-                    <td class="px-4 py-2 border">
-                        <div class="flex justify-center space-x-4">
-                            <!-- Cập nhật -->
-                            <a href="@Url.Action("Edit", "Hoadons", new { id = hoadon.IdhoaDon })"
-                               class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
-                                Cập nhật
-                            </a>
+                    @*                     <td class="px-4 py-2 border">
+                <div class="flex justify-center space-x-4">
+                <!-- Cập nhật -->
+                <a href="@Url.Action("Edit", "Hoadons", new { id = hoadon.IdhoaDon })"
+                class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
+                Cập nhật
+                </a>
 
-                            <!-- Xóa -->
-                            <a href="@Url.Action("Delete", "Hoadons", new { id = hoadon.IdhoaDon })"
-                               class="px-3 py-1 bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-md hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-600 transition">
-                                Xóa
-                            </a>
-                        </div>
-                    </td>
+                <!-- Xóa -->
+                <a href="@Url.Action("Delete", "Hoadons", new { id = hoadon.IdhoaDon })"
+                class="px-3 py-1 bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-md hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-600 transition">
+                Xóa
+                </a>
+                </div>
+                </td> *@
                 </tr>
             }
         </tbody>
     </table>
 </div>
-
 <!-- Pagination Section -->
 <nav class="mt-6 flex justify-center">
     <ul class="flex items-center space-x-2">
@@ -109,3 +108,4 @@
         </li>
     </ul>
 </nav>
+
