@@ -37,17 +37,27 @@
             @foreach (var item in Model)
             {
                 <tr class="text-center hover:bg-gray-100 transition">
-                    <td class="px-4 py-2 border">@item.IdkhachHangNavigation?.TenKhachHang</td>
-                    <td class="px-4 py-2 border">@item.NgayLapHoaDon?.ToString("yyyy-MM-dd")</td>
+                    <td class="px-4 py-2 border">@item.NgayLapHoaDon?.ToString("dd-MM-yyyy")</td>
+                    <td>
+                        @if (item.Hoadons != null && item.Hoadons.Any())
+                        {
+                            var tongTien = item.Hoadons.Sum(h => h.TongTien);
+                            @tongTien.ToString("C0") <!-- Hiển thị tổng tiền -->
+                        }
+                        else
+                        {
+                            @:N/A <!-- Nếu không có hóa đơn -->
+                        }
+                    </td>
                     <td class="px-4 py-2 border">@item.TrangThaiThanhToan</td>
-
-                    @*                     <td class="px-4 py-2 border">
-                <div class="flex justify-center space-x-4">
-                <!-- Cập nhật -->
-                <a href="@Url.Action("Edit", "Phieudathangs", new { id = item.IdphieuDatHang })"
-                class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
-                Cập nhật
-                </a>
+                    <td class="px-4 py-2 border">@item.IdkhachHangNavigation?.TenKhachHang</td>
+                    <td class="px-4 py-2 border">
+                        <div class="flex justify-center space-x-4">
+                            <!-- Cập nhật -->
+                            <a href="@Url.Action("Edit", "Phieudathangs", new { id = item.IdphieuDatHang })"
+                               class="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-md hover:bg-gradient-to-r hover:from-green-500 hover:to-blue-600 transition">
+                                Cập nhật
+                            </a>
 
                 <!-- Chi tiết -->
                 <a href="@Url.Action("Details", "Phieudathangs", new { id = item.IdphieuDatHang })"
@@ -61,7 +71,7 @@
                 Xóa
                 </a>
                 </div>
-                </td> *@
+                </td> 
                 </tr>
             }
         </tbody>
