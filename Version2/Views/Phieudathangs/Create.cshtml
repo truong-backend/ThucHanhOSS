@@ -1,32 +1,96 @@
 ﻿@model Version2.Models.Phieudathang
-
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Phieu Dat Hang";
 }
 
-<h1>Create</h1>
+<h1 class="text-4xl font-extrabold text-gray-900 mb-8">Thêm phiếu đặt hàng</h1>
 
-<h4>Phieudathang</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="IdkhachHang" class="control-label"></label>
-                <select asp-for="IdkhachHang" class ="form-control" asp-items="ViewBag.IdkhachHang"></select>
+<hr class="my-6 border-t-2 border-gray-200" />
+
+<div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <form asp-action="Create" class="space-y-8">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-4"></div>
+
+        <!-- ID Phiếu Đặt Hàng (IdphieuDatHang) -->
+        <div class="form-group">
+            <label asp-for="IdphieuDatHang" class="block text-lg font-medium text-gray-700">Mã Phiếu Đặt Hàng</label>
+            <input asp-for="IdphieuDatHang" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" disabled />
+            <span asp-validation-for="IdphieuDatHang" class="text-sm text-red-600"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="IdkhachHang" class="block text-lg font-medium text-gray-700">Khách hàng</label>
+            <select asp-for="IdkhachHang" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="">Chọn Mã Khách</option>
+                @if (ViewData["IdkhachHang"] != null)
+                {
+                    @foreach (var item in (SelectList)ViewData["IdkhachHang"])
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                }
+                else
+                {
+                    <p>Danh sách khách hàng không có dữ liệu.</p>
+                }
+            </select>
+            <span asp-validation-for="IdkhachHang" class="text-sm text-red-600"></span>
+        </div>
+        <!-- Ngày lập hóa đơn (NgayLapHoaDon) -->
+        <div class="form-group">
+            <label asp-for="NgayLapHoaDon" class="block text-lg font-medium text-gray-700">Ngày lập hóa đơn</label>
+            <input asp-for="NgayLapHoaDon" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" type="date" />
+            <span asp-validation-for="NgayLapHoaDon" class="text-sm text-red-600"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="TrangThaiThanhToan" class="block text-lg font-medium text-gray-700">Trạng thái thanh toán</label>
+            <select asp-for="TrangThaiThanhToan" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="Chưa thanh toán">Chưa thanh toán</option>
+                <option value="Đã thanh toán">Đã thanh toán</option>
+            </select>
+            <span asp-validation-for="TrangThaiThanhToan" class="text-sm text-red-600"></span>
+        </div>
+
+        <h5 class="text-xl font-semibold text-gray-800 mt-8">Chi tiết sản phẩm</h5>
+
+        @foreach (var chitiet in Model.Chitietphieudathangs)
+        {
+           
+            <div class="space-y-6">
+                <div class="form-group">
+                    <label asp-for="@chitiet.Idsach" class="block text-lg font-medium text-gray-700">Chọn sách</label>
+                    <select asp-for="@chitiet.Idsach" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" asp-items="ViewBag.Idsach"></select>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="@chitiet.Gia" class="block text-lg font-medium text-gray-700">Giá</label>
+                    <input asp-for="@chitiet.Gia" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" type="number" step="0.01" value="@chitiet.Gia.ToString("0.00")" />
+                    <span asp-validation-for="@chitiet.Gia" class="text-sm text-red-600"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="@chitiet.SoLuong" class="block text-lg font-medium text-gray-700">Số lượng</label>
+                    <input asp-for="@chitiet.SoLuong" class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    <span asp-validation-for="@chitiet.SoLuong" class="text-sm text-red-600"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+        }
+
+
+        <div class="form-group mt-8">
+            <input type="submit" asp-action="Create" value="Tạo Phiếu Đặt Hàng" class="w-full px-6 py-3 bg-indigo-600 text-white font-bold rounded-md shadow-md hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+    </form>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="mt-6 text-center">
+    <a asp-action="Index" class="text-indigo-600 hover:text-indigo-800">Quay lại danh sách</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

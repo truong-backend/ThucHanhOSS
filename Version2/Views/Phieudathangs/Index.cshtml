@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Version2.Models.Phieudathang>
 
 @{
-    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
@@ -39,9 +39,20 @@
             @foreach (var item in Model)
             {
                 <tr class="text-center hover:bg-gray-100 transition">
-                    <td class="px-4 py-2 border">@item.NgayLapHoaDon?.ToString("yyyy-MM-dd")</td>
+                    <td class="px-4 py-2 border">@item.NgayLapHoaDon?.ToString("dd-MM-yyyy")</td>
+                    <td>
+                        @if (item.Hoadons != null && item.Hoadons.Any())
+                        {
+                            var tongTien = item.Hoadons.Sum(h => h.TongTien);
+                            @tongTien.ToString("C0") <!-- Hiển thị tổng tiền -->
+                        }
+                        else
+                        {
+                            @:N/A <!-- Nếu không có hóa đơn -->
+                        }
+                    </td>
                     <td class="px-4 py-2 border">@item.TrangThaiThanhToan</td>
-                    <td class="px-4 py-2 border">@item.IdkhachHangNavigation?.IdkhachHang</td>
+                    <td class="px-4 py-2 border">@item.IdkhachHangNavigation?.TenKhachHang</td>
                     <td class="px-4 py-2 border">
                         <div class="flex justify-center space-x-4">
                             <!-- Cập nhật -->
