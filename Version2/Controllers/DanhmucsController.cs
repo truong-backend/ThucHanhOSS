@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Version2.Models;
@@ -19,11 +20,49 @@ namespace Version2.Controllers
         }
 
         // GET: Danhmucs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchTerm, int page = 1)
         {
-            return _context.Danhmucs != null ?
-                        View(await _context.Danhmucs.ToListAsync()) :
-                        Problem("Entity set 'HeThongBanSachContext.Danhmucs'  is null.");
+            ViewBag.ls = _context.Tacgia;
+
+            const int pageSize = 10;
+
+            if (_context.Danhmucs == null)
+            {
+                return Problem("Entity set 'HeThongBanSachContext.TacGia' is null.");
+            }
+
+            // Tìm kiếm theo tên hoặc quốc tịch
+            IQueryable<Danhmuc> tacGiasQuery = _context.Danhmucs;
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                tacGiasQuery = tacGiasQuery.Where(t => t.TenDanhMuc.Contains(searchTerm));
+            }
+
+            // Tổng số mục và trang
+            int totalItems = await tacGiasQuery.CountAsync();
+            int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+            // Lấy tác giả với phân trang
+            var tacGias = await tacGiasQuery
+            .OrderByDescending(t => t.IddanhMuc)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            // Kiểm tra nếu không có tác giả nào trong danh sách
+            if (!tacGias.Any())
+            {
+                ViewBag.Message = "Không có danh mục cần tìm hoặc danh sách rỗng.";
+            }
+
+
+
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = totalPages;
+            ViewBag.SearchTerm = searchTerm; // Lưu giá trị tìm kiếm trong ViewBag
+
+            return View(tacGias);
         }
 
         // GET: Danhmucs/Details/5
