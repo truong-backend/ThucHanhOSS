@@ -42,8 +42,7 @@
               "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Create.cshtml",
               "ViewState": "AgIAAFcAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T20:00:35.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T20:00:35.674Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "Version2\\Views\\Phieudathangs\\Edit.cshtml",
               "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Phieudathangs\\Edit.cshtml",
               "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Edit.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAiwDgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-13T19:54:08.425Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Details.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T19:53:58.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T19:53:58.633Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Version2\\Views\\Hoadons\\Details.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAAAUwCkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T19:52:17.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T19:52:17.996Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Delete.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T19:46:46.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T19:46:46.794Z"
             }
           ]
         }
