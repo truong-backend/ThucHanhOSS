@@ -1,25 +1,185 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DoAnOSS\\ThucHanhOSS\\",
+  "WorkspaceRootPath": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\taikhoannguoigiaohangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\taikhoannguoigiaohangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\tacgiums\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\tacgiums\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\tacgiums\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\tacgiums\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\shared\\_layout_admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\shared\\_layout_admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|d:\\doanoss\\thuchanhoss\\version2\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\saches\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\saches\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\phieudathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\phieudathangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\nhaxuatbans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\nhaxuatbans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\nhaxuatbans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\nhaxuatbans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\nhaxuatbans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\nhaxuatbans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\khachhangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\khachhangs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\khachhangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\khachhangs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\khachhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\khachhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\hoadons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\hoadons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\giohang\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\giohang\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\donhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\donhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\donhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\donhangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\danhmucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\danhmucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\danhmucs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\danhmucs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\danhmucs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\danhmucs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\danhmucs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\danhmucs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\views\\chitietphieudathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\views\\chitietphieudathangs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\taikhoanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\taikhoanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\taikhoannguoigiaohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\taikhoannguoigiaohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\sachescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\sachescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\tacgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\tacgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\phieudathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\phieudathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\nhaxuatbanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\nhaxuatbanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\nguoigiaohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\nguoigiaohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\khachhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\hoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\hoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\donhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\donhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\controllers\\chitietphieudathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\controllers\\chitietphieudathangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\models\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|c:\\users\\truong\\onedrive\\documents\\thuchanhoss\\version2\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62B271CF-ACDE-4CAD-8ABD-FF3155840D73}|Version2\\Version2.csproj|solutionrelative:version2\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,72 +190,594 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PagedResult.cs",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\PagedResult.cs",
-              "RelativeDocumentMoniker": "Version2\\Models\\PagedResult.cs",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\PagedResult.cs",
-              "RelativeToolTip": "Version2\\Models\\PagedResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GiohangController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\GiohangController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\GiohangController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\GiohangController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\GiohangController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:58:08.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Sach.cs",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\Sach.cs",
-              "RelativeDocumentMoniker": "Version2\\Models\\Sach.cs",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Models\\Sach.cs",
-              "RelativeToolTip": "Version2\\Models\\Sach.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:52:38.9Z",
+              "WhenOpened": "2024-12-13T15:45:30.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Version2\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Version2\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:40:07.678Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\appsettings.json",
+              "RelativeDocumentMoniker": "Version2\\appsettings.json",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\appsettings.json",
+              "RelativeToolTip": "Version2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T15:45:12.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Version2\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:45:11.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Taikhoannguoigiaohangs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Taikhoannguoigiaohangs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Taikhoannguoigiaohangs\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Taikhoannguoigiaohangs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:45:05.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Program.cs",
+              "RelativeDocumentMoniker": "Version2\\Program.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Program.cs",
+              "RelativeToolTip": "Version2\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:44:53.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Tacgiums\\Details.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Tacgiums\\Details.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Tacgiums\\Details.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Tacgiums\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:44:41.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Tacgiums\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Tacgiums\\Create.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Tacgiums\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Tacgiums\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:44:39.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout_Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout_Admin.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Shared\\_Layout_Admin.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout_Admin.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Shared\\_Layout_Admin.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAUwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:44:17.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Saches\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Saches\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Saches\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Saches\\Index.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:43:05.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Phieudathangs\\Index.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAUwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:42:12.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Version2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Version2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAAUwOEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-12T16:37:09.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Nhaxuatbans\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Nhaxuatbans\\Create.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Nhaxuatbans\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Nhaxuatbans\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:41:56.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Nhaxuatbans\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Nhaxuatbans\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Nhaxuatbans\\Delete.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Nhaxuatbans\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:41:49.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Nhaxuatbans\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Nhaxuatbans\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Nhaxuatbans\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Nhaxuatbans\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:41:15.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Khachhangs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Khachhangs\\Index.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAUwHYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:40:39.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Khachhangs\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Edit.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Khachhangs\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:40:38.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Khachhangs\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Delete.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Khachhangs\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:40:37.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Khachhangs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Khachhangs\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Khachhangs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:40:36.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Hoadons\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Hoadons\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Hoadons\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Hoadons\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:39:45.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:39:40.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Version2\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\DoAnOSS\\ThucHanhOSS\\Version2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Version2\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-12T16:37:05.068Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Giohang\\Success.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Giohang\\Success.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Giohang\\Success.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Giohang\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:39:29.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Donhangs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Donhangs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Donhangs\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Donhangs\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAUwHIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:38:51.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Donhangs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Donhangs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Donhangs\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Donhangs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:38:33.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Danhmucs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Index.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Danhmucs\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:38:18.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Danhmucs\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Edit.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Danhmucs\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:38:06.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Details.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Danhmucs\\Details.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Details.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Danhmucs\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:38:02.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Danhmucs\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Delete.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Danhmucs\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:37:49.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Danhmucs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Danhmucs\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Danhmucs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:37:46.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Chitietphieudathangs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Version2\\Views\\Chitietphieudathangs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Views\\Chitietphieudathangs\\Create.cshtml",
+              "RelativeToolTip": "Version2\\Views\\Chitietphieudathangs\\Create.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T15:37:25.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TaikhoansController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\TaikhoansController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\TaikhoansController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\TaikhoansController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\TaikhoansController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:21:58.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TaikhoannguoigiaohangsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\TaikhoannguoigiaohangsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\TaikhoannguoigiaohangsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\TaikhoannguoigiaohangsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\TaikhoannguoigiaohangsController.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAAKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:21:44.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TacgiumsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\TacgiumsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\TacgiumsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\TacgiumsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\TacgiumsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:21:17.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SachesController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\SachesController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\SachesController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\SachesController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\SachesController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswLEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:21:10.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PhieudathangsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\PhieudathangsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\PhieudathangsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\PhieudathangsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\PhieudathangsController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAUwMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:21:01.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "NhaxuatbansController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\NhaxuatbansController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\NhaxuatbansController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\NhaxuatbansController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\NhaxuatbansController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:20:41.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "NguoigiaohangsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\NguoigiaohangsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\NguoigiaohangsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\NguoigiaohangsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\NguoigiaohangsController.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAUwPUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:20:31.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "KhachhangsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\KhachhangsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\KhachhangsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\KhachhangsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\KhachhangsController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAUwMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:20:20.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "HoadonsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\HoadonsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\HoadonsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\HoadonsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\HoadonsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:19:13.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAUwLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:40:07.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DonhangsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\DonhangsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\DonhangsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\DonhangsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\DonhangsController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwBwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:18:26.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DanhmucsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\DanhmucsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\DanhmucsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\DanhmucsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\DanhmucsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:18:07.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ChitietphieudathangsController.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\ChitietphieudathangsController.cs",
+              "RelativeDocumentMoniker": "Version2\\Controllers\\ChitietphieudathangsController.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Controllers\\ChitietphieudathangsController.cs",
+              "RelativeToolTip": "Version2\\Controllers\\ChitietphieudathangsController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T15:17:57.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Sach.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Models\\Sach.cs",
+              "RelativeDocumentMoniker": "Version2\\Models\\Sach.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Models\\Sach.cs",
+              "RelativeToolTip": "Version2\\Models\\Sach.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:52:38.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Models\\PagedResult.cs",
+              "RelativeDocumentMoniker": "Version2\\Models\\PagedResult.cs",
+              "ToolTip": "C:\\Users\\truong\\OneDrive\\Documents\\ThucHanhOSS\\Version2\\Models\\PagedResult.cs",
+              "RelativeToolTip": "Version2\\Models\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:58:08.565Z"
             }
           ]
         }
